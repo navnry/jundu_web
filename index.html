@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no,email=no,address=no"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/public.css">
@@ -55,46 +65,88 @@
             </ul>
         </li>
         <li><a href="">房型体验</a></li>
+        <li>
+            <i class="iconfont">&#xe60a;</i>
+            <a href="">君都会</a>
+            <ul class="sub_menu">
+                <li><a href="">君兰</a></li>
+                <li><a href="">君惠</a></li>
+                <li><a href="">君尊</a></li>
+                <li><a href="">君竹</a></li>
+            </ul>
+        </li>
         <li><a href="">招商加盟</a></li>
-        <li><a href="">采购招标</a></li>
-        <li><a href="">新闻资讯</a></li>
-        <li><a href="">会员权益</a></li>
-        <li><a href="">联系我们</a></li>
+        <li>
+            <i class="iconfont">&#xe60a;</i>
+            <a href="">采购招标</a>
+            <ul class="sub_menu">
+                <li><a href="">布草类</a></li>
+                <li><a href="">杂件类</a></li>
+                <li><a href="">电器类</a></li>
+                <li><a href="">弱电工程类</a></li>
+                <li><a href="">五金类</a></li>
+                <li><a href="">家具类</a></li>
+                <li><a href="">装饰类</a></li>
+                <li><a href="">大型设备类</a></li>
+            </ul>
+        </li>
+        <li>
+            <i class="iconfont">&#xe60a;</i>
+            <a href="">新闻资讯</a>
+            <ul class="sub_menu">
+                <li><a href="">酒店动态</a></li>
+                <li><a href="">促销活动</a></li>
+                <li><a href="">新店开业</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <i class="iconfont">&#xe60a;</i>
+            <a href="">联系我们</a>
+            <ul class="sub_menu">
+                <li><a href="">人才招聘</a></li>
+                <li><a href="">联系方式</a></li>
+            </ul>
+        </li>
     </ul>
 </div>
 <div id="container">
-    <div class="section" style="background: url(images/home/home_01.jpg) center center /cover no-repeat">
-
+    <div class="section">
+        <div class="main" style="background: url(images/home/home_01.jpg) center center /cover no-repeat"></div>
     </div>
-    <div class="section" style="background: url(images/home/home_02.jpg) center center /cover no-repeat">
-
+    <div class="section">
+        <div class="main" style="background: url(images/home/home_02.jpg) center center /cover no-repeat"></div>
     </div>
-    <div class="section" style="background: url(images/home/home_03.jpg) center center /cover no-repeat">
-
+    <div class="section">
+        <div class="main" style="background: url(images/home/home_03.jpg) center center /cover no-repeat"></div>
     </div>
-    <div class="section" style="background: url(images/home/home_04.jpg) center center /cover no-repeat">
-
+    <div class="section">
+        <div class="main"  style="background: url(images/home/home_04.jpg) center center /cover no-repeat"></div>
     </div>
-    <div class="section" style="background: url(images/home/home_05.jpg) center center /cover no-repeat">
-
+    <div class="section" >
+        <div class="main" style="background: url(images/home/home_05.jpg) center center /cover no-repeat"></div>
     </div>
     <div class="section footer fp-auto-height">
-
+        <img src="images/base/logo.png" alt="">
     </div>
 </div>
 </body>
 </html>
 <script>
     $(function () {
-        $('#container').fullpage({});
+        $('#container').fullpage({
+            scrollingSpeed:800,
+        });
         $(".menu").click(function () {
             $(this).toggleClass("on");
             $(".nav").toggleClass("on")
         });
         $(".nav > ul >li").click(function () {
             $(this).children(".sub_menu").stop().slideToggle(300);
+            $(this).toggleClass("active");
+            $(this).siblings().children(".sub_menu").slideUp(300);
+            $(this).siblings().removeClass("active");
             $(this).children("i").toggleClass("on");
         })
     })
 </script>
-

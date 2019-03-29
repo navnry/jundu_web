@@ -3,6 +3,12 @@
     font-size: 0;
 }
 
+@font-face {
+    font-family: 'webfont';
+    src: url('//at.alicdn.com/t/webfont_5gpsosh34yt.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_5gpsosh34yt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/webfont_5gpsosh34yt.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/webfont_5gpsosh34yt.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/webfont_5gpsosh34yt.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
+}
+
 .header {
     width: 100%;
     height: .95rem;
@@ -11,8 +17,8 @@
     top: 0;
     z-index: 9;
     padding: .18rem .26rem;
-    border-bottom: .02rem solid #cccccc;
-    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);*/
+    /*border-bottom: .02rem solid #cccccc;*/
+    /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);*/
 }
 
 .header .menu {
@@ -64,10 +70,15 @@
     color: #2c2c2c;
 }
 
+.main {
+    width: 100%;
+    height: 100%;
+}
+
 .nav {
     width: 100%;
     height: calc(100% - .95rem);
-    position: absolute;
+    position: fixed;
     background: #ffffff;
     z-index: 8;
     top: -100%;
@@ -75,7 +86,8 @@
     visibility: hidden;
     transition: all .3s;
     padding: 0 .28rem;
-    overflow: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .nav::-webkit-scrollbar {
@@ -90,21 +102,23 @@
 }
 
 .nav > ul > li {
-    border-bottom: .02rem solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     position: relative;
     padding: 0 .34rem;
 }
 
+
 .nav > ul > li > i {
-    font-size: .3rem;
-    line-height: 1.22rem;
+    font-size: .24rem;
+    line-height: 1rem;
     position: absolute;
     right: .3rem;
     transition: all .3s;
     margin: auto;
+    color: #333333;
 }
 
-.nav > ul > li > i.on {
+.nav > ul > li.active i {
     transform: rotate(90deg);
     transition: all .3s;
 }
@@ -112,7 +126,8 @@
 .nav > ul > li > a {
     font-size: .3rem;
     color: #333333;
-    line-height: 1.22rem;
+    line-height: 1rem;
+    font-family: webfont, sans-serif;
 }
 
 .nav > ul > li.on > a {
@@ -122,27 +137,18 @@
 .sub_menu {
     display: none;
     position: relative;
-    top: -.28rem;
+    top: -.16rem;
 }
-
 
 .sub_menu li a {
     font-size: .28rem;
     color: #666666;
-    line-height: .6rem;
+    line-height: .54rem;
     padding-left: .3rem;
-}
-
-#container {
-    height: calc(100% - .95rem) !important;
-    position: relative;
-    top: .95rem;
-}
-
-#container .section {
-    /*height: calc(100% - .95rem) !important;*/
+    font-family: webfont, sans-serif;
 }
 
 .footer {
-
+    width: 100%;
+    height: 1rem;
 }
