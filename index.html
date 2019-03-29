@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="font/iconfont/iconfont.css">
+    <title>君都</title>
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/fullpage.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="menu">
+        <i class="iconfont open">&#xe604;</i>
+        <i class="iconfont close">&#xe606;</i>
+    </div>
+    <div class="logo">
+        <h1>
+            <a href="index.html">君都</a>
+        </h1>
+    </div>
+    <div class="tel">
+        <a href="tel:10086"> <i class="iconfont">&#xe601;</i></a>
+    </div>
+</div>
+<div class="nav">
+    <ul>
+        <li class="on">
+            <a href="index.html">网站首页</a>
+        </li>
+        <li>
+            <i class="iconfont">&#xe60a;</i>
+            <a href="">感受君都</a>
+            <ul class="sub_menu">
+                <li><a href="">君都架构</a></li>
+                <li><a href="">君都故事</a></li>
+                <li><a href="">君都文化</a></li>
+                <li><a href="">君都服务</a></li>
+                <li><a href="">君都资质</a></li>
+            </ul>
+        </li>
+        <li>
+            <i class="iconfont">&#xe60a;</i>
+            <a href="">君都品牌</a>
+            <ul class="sub_menu">
+                <li><a href="">君都酒店</a></li>
+                <li><a href="">君都云酒店</a></li>
+                <li><a href="">君铂雅</a></li>
+            </ul>
+        </li>
+        <li><a href="">房型体验</a></li>
+        <li><a href="">招商加盟</a></li>
+        <li><a href="">采购招标</a></li>
+        <li><a href="">新闻资讯</a></li>
+        <li><a href="">会员权益</a></li>
+        <li><a href="">联系我们</a></li>
+    </ul>
+</div>
+<div id="container">
+    <div class="section" style="background: url(images/home/home_01.jpg) center center /cover no-repeat">
+
+    </div>
+    <div class="section" style="background: url(images/home/home_02.jpg) center center /cover no-repeat">
+
+    </div>
+    <div class="section" style="background: url(images/home/home_03.jpg) center center /cover no-repeat">
+
+    </div>
+    <div class="section" style="background: url(images/home/home_04.jpg) center center /cover no-repeat">
+
+    </div>
+    <div class="section" style="background: url(images/home/home_05.jpg) center center /cover no-repeat">
+
+    </div>
+    <div class="section footer fp-auto-height">
+
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        $('#container').fullpage({});
+        $(".menu").click(function () {
+            $(this).toggleClass("on");
+            $(".nav").toggleClass("on")
+        });
+        $(".nav > ul >li").click(function () {
+            $(this).children(".sub_menu").stop().slideToggle(300);
+            $(this).children("i").toggleClass("on");
+        })
+    })
+</script>
+
