@@ -3,10 +3,14 @@
     font-size: 0;
 }
 
+html, body {
+
+}
+
 @font-face {
     font-family: 'webfont';
-    src: url('//at.alicdn.com/t/webfont_5gpsosh34yt.eot'); /* IE9*/
-    src: url('//at.alicdn.com/t/webfont_5gpsosh34yt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/webfont_5gpsosh34yt.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/webfont_5gpsosh34yt.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/webfont_5gpsosh34yt.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
+    src: url('//at.alicdn.com/t/webfont_6rkldyne9ub.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_6rkldyne9ub.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/webfont_6rkldyne9ub.woff') format('woff'), /* chrome、firefox */ url('//at.alicdn.com/t/webfont_6rkldyne9ub.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/webfont_6rkldyne9ub.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
 }
 
 .header {
@@ -87,7 +91,6 @@
     transition: all .3s;
     padding: 0 .28rem;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .nav::-webkit-scrollbar {
@@ -106,7 +109,6 @@
     position: relative;
     padding: 0 .34rem;
 }
-
 
 .nav > ul > li > i {
     font-size: .24rem;
@@ -148,7 +150,74 @@
     font-family: webfont, sans-serif;
 }
 
+
 .footer {
     width: 100%;
-    height: 1rem;
+}
+
+.footer .wechat {
+    text-align: center;
+    padding-top: .45rem;
+    position: relative;
+}
+
+.footer .wechat i {
+    font-size: .65rem;
+}
+
+.footer .wechat .wechat_code {
+    width: 4.67rem;
+    height: 4.89rem;
+    padding-top: .17rem;
+    background: url("../images/base/wechat_bj.png") center center /cover no-repeat;
+    position: absolute;
+    top: -4.52rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, .2rem);
+    transition: all .3s;
+}
+
+.footer .wechat .wechat_code img {
+    width: 3.55rem;
+}
+
+.footer .wechat .wechat_code p {
+    font-size: .24rem;
+    line-height: .24rem;
+    padding-top: .2rem;
+    color: #666666;
+}
+
+.footer .wechat .wechat_code.on {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all .3s;
+}
+
+.footer .msg {
+    text-align: center;
+    padding: .2rem 0;
+}
+
+.footer .msg p {
+    font-size: .3rem;
+    color: #333333;
+    line-height: .3rem;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-bottom: .2rem;
+}
+
+.footer .copyright p {
+    font-size: .2rem;
+    line-height: .34rem;
+    color: #666666;
+    font-family: webfont, sans-serif;
 }

@@ -12,13 +12,12 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-    <meta http-equiv="Pragma" content="no-cache"/>
-    <meta http-equiv="Expires" content="0"/>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="font/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>君都</title>
     <script src="js/rem.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -36,7 +35,7 @@
         </h1>
     </div>
     <div class="tel">
-        <a href="tel:10086"> <i class="iconfont">&#xe601;</i></a>
+        <a href="tel:400-181-1188"> <i class="iconfont">&#xe601;</i></a>
     </div>
 </div>
 <div class="nav">
@@ -99,7 +98,6 @@
                 <li><a href="">新店开业</a></li>
             </ul>
         </li>
-
         <li>
             <i class="iconfont">&#xe60a;</i>
             <a href="">联系我们</a>
@@ -112,34 +110,114 @@
 </div>
 <div id="container">
     <div class="section">
-        <div class="main" style="background: url(images/home/home_01.jpg) center center /cover no-repeat"></div>
+        <div class="main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"
+                         style="background: url(images/home/home_01_01.jpg) center center/cover no-repeat">
+                        <div class="column">
+                            <h2>山</h2>
+                            <i></i>
+                            <p>一盏灯，两壶酒</p>
+                            <p>三四好友，五味人生</p>
+                            <p>坐而论道</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                         style="background: url(images/home/home_01_02.jpg) center center/cover no-repeat"></div>
+                    <div class="swiper-slide"
+                         style="background: url(images/home/home_01_03.jpg) center center/cover no-repeat"></div>
+                    <div class="swiper-slide"
+                         style="background: url(images/home/home_01_04.jpg) center center/cover no-repeat"></div>
+                    <div class="swiper-slide"
+                         style="background: url(images/home/home_01_05.jpg) center center/cover no-repeat"></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+            </div>
+        </div>
     </div>
     <div class="section">
-        <div class="main" style="background: url(images/home/home_02.jpg) center center /cover no-repeat"></div>
+        <div class="main" style="background: url(images/home/home_02.jpg) center center /cover no-repeat">
+            <div class="column">
+                <h2>山</h2>
+                <i></i>
+                <p>麓山耸立，人文荟萃</p>
+                <p>万物汇于山间</p>
+                <p>在一山一景中</p>
+                <p>寻一份世外的宁静</p>
+            </div>
+        </div>
     </div>
     <div class="section">
-        <div class="main" style="background: url(images/home/home_03.jpg) center center /cover no-repeat"></div>
+        <div class="main" style="background: url(images/home/home_03.jpg) center center /cover no-repeat">
+            <div class="column">
+                <h2>山</h2>
+                <i></i>
+                <p>湘江奔流</p>
+                <p>聚集溪流河川而浩浩北去</p>
+                <p>在一山一水中</p>
+                <p>感受水纳百川的胸气韵</p>
+            </div>
+        </div>
     </div>
     <div class="section">
-        <div class="main"  style="background: url(images/home/home_04.jpg) center center /cover no-repeat"></div>
+        <div class="main" style="background: url(images/home/home_04.jpg) bottom center /cover no-repeat">
+            <div class="column">
+                <h2>山</h2>
+                <i></i>
+                <p>橘洲静卧，立于凌波之上</p>
+                <p>环拥山间而藏于水间</p>
+                <p>于江流洲畔间静心凝神</p>
+                <p>感悟内心归于自然的静谧</p>
+            </div>
+        </div>
     </div>
-    <div class="section" >
-        <div class="main" style="background: url(images/home/home_05.jpg) center center /cover no-repeat"></div>
+    <div class="section">
+        <div class="main" style="background: url(images/home/home_05.jpg) center center /cover no-repeat">
+            <div class="column">
+                <h2>山</h2>
+                <i></i>
+                <p>立于繁华，亲近自然</p>
+                <p>水光山色与洲景城廓浑然一体</p>
+                <p>星城江山如此多娇，驻足品味</p>
+                <p>在山水洲城中寻找生活的本真乐趣</p>
+            </div>
+        </div>
     </div>
     <div class="section footer fp-auto-height">
-        <img src="images/base/logo.png" alt="">
+        <div class="wechat">
+            <i class="iconfont">&#xe6a6;</i>
+            <div class="wechat_code">
+                <img src="images/base/wechat_code.jpg" alt="">
+                <p>长按保存至手机，打开微信扫一扫</p>
+            </div>
+        </div>
+        <div class="msg">
+            <p>君健于行 · 归心于都</p>
+        </div>
+        <div class="copyright">
+            <p>COPYRIGHT@2019长沙君都酒店管理有限公司 ALL RIGHTS RESERVED</p>
+            <p>备案号：湘ICP备17000805号 </p>
+        </div>
     </div>
 </div>
+
 </body>
 </html>
+<script src="js/swiper.min.js"></script>
 <script>
     $(function () {
         $('#container').fullpage({
-            scrollingSpeed:800,
+            scrollingSpeed: 800,
         });
+        $(".nav").on("touchmove", function () {
+            event.stopPropagation()
+        });
+
         $(".menu").click(function () {
             $(this).toggleClass("on");
-            $(".nav").toggleClass("on")
+            $(".nav").toggleClass("on");
+            event.stopPropagation();
         });
         $(".nav > ul >li").click(function () {
             $(this).children(".sub_menu").stop().slideToggle(300);
@@ -147,6 +225,25 @@
             $(this).siblings().children(".sub_menu").slideUp(300);
             $(this).siblings().removeClass("active");
             $(this).children("i").toggleClass("on");
+            event.stopPropagation();
+        });
+        $(".wechat i").click(function () {
+            $(this).siblings(".wechat_code").toggleClass("on")
+            event.stopPropagation()
+        });
+        $(".footer, .main").click(function () {
+            $(".wechat_code").removeClass("on");
+            event.stopPropagation()
+        });
+        var bannerSwiper = new Swiper(".swiper-container", {
+            speed: 800,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: ".swiper-pagination"
+            }
         })
     })
 </script>
